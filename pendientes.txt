@@ -1,16 +1,3 @@
-
-
-DETAIL
-
--Mirar bien el botón de Comprar.
-
--Ver bien el espacio en el precio.
-
-LIST
-
--Acomodar los > 
-
-
 CSS
 
 -Ordenarlos y optimizar.

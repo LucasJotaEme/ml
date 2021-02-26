@@ -105,7 +105,6 @@ hr{
 
 .text-price{
     font-size: 46px;
-    padding-top: 20px;
 }
 
 .text-title-description{
@@ -120,8 +119,8 @@ hr{
 .btn-ml{
     background-color: #3483FA !important;
     color: white !important;
-    line-height: 48px !important;
-    padding: 0px 90px 0px 90px !important;
+    line-height: 30px !important;
+    padding: 1px 80px!important;
     
 }
 

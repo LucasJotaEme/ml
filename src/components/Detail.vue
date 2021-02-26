@@ -15,8 +15,10 @@
                             <p class="text-date">Nuevo - 234 vendidos</p>
                             <p class="text-name">Deco Reverse Sombrero Oxford</p>
                             <p class="text-price">$ 1.980</p>
-
-                            <buttom class="btn btn-ml">Comprar</buttom>
+                            
+                            <div class="padding-top">
+                                <buttom class="btn btn-sm btn-ml">Comprar</buttom>
+                            </div>
                     </div>
                 </div>
                 <div class="detail-description">
