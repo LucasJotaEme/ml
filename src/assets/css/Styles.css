@@ -1,16 +1,37 @@
 
+
 body{
     font-family: "Proxima Nova",-apple-system,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif !important;
+    background-color: #EEEEEE !important;
+}
+
+.auto{
+    margin:auto !important;
+}
+
+.detail-description{
+    padding-top: 10px;
+}
+
+.div-results{
+    background-color: white;
+    margin-right: 50px;
+    border-radius: 4px;
+    margin-top: 16px;
+}
+
+.div-detail{
+    background-color: white;
+    margin-right: 50px;
+    border-radius: 4px;
+    margin-top: 16px;
+    padding: 32px;
 }
 
 p{
     margin-block-start: 0em !important;
     margin-block-end: 0em !important;
     /* Para quitar el margen por default de Boots */
-}
-
-body{
-    background-color: #EEEEEE;
 }
 
 .nav-search{
@@ -20,14 +41,13 @@ body{
 }
 
 .nav-input{
-    
-    width: 400px !important;
+    width: 750px !important;
     border-radius: 2px !important;
     border: none !important;
     color: #999999;
 }
 
-.nav-logo-search{
+.nav-search{
     border: none !important;
 }
 
@@ -45,8 +65,16 @@ body{
 
 }
 
+hr{
+    margin: 0px 16px 0px 16px !important;
+}
+
 .detail{
     margin: 16px 0px 16px 100px;
+}
+
+.template-default{
+    margin: 16px 100px 16px 100px;
 }
 
 .lista li{
@@ -57,10 +85,6 @@ body{
 
 .lista-selected{
     font-weight: bold;
-}
-
-.product-dates{
-    margin-top:16px;
 }
 
 .product-image{
@@ -84,24 +108,71 @@ body{
     padding-top: 20px;
 }
 
-.text-description{
+.text-title-description{
     font-size: 28px;
-    padding-bottom: 32px !important;
-    padding-left: 32px !important;
-    padding-top: 10px !important;
 }
 
-.product-col-dates{
-    border-color: transparent !important;
-    padding-top: 32px !important;
-    padding-bottom: 32px !important;
+.text-description{
+    font-size: 16px;
+    color: #999999;
 }
 
 .btn-ml{
-    font-family: Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif !important; 
     background-color: #3483FA !important;
     color: white !important;
     line-height: 48px !important;
-    padding: 1px 90px 1px 90px !important;
+    padding: 0px 90px 0px 90px !important;
     
+}
+
+.product-img{
+    width: 180px;
+    height: 180px;
+    border-radius: 4px;
+}
+
+.margin-top{
+    margin-top: 16px !important;
+}
+
+.margin-bottom{
+    margin-bottom: 16px !important;
+}
+
+.margin-left{
+    margin-left: 16px !important;
+}
+
+.product-price{
+    font-size: 24px;
+}
+
+.product-shipping{
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+.product-country{
+    font-size: 12px;
+    color: #999999;
+}
+
+.padding-top{
+    padding-top: 32px !important;
+}
+
+.padding-left{
+    padding-left: 32px !important;
+}
+
+.product-description{
+    max-width: 350px;
+}
+
+.detail-description{
+    max-width: 700px;
+}
+
+.div-products{
+    background-color: white;
 }
