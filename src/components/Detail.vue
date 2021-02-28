@@ -1,49 +1,63 @@
-<template>
-    <div class="template-default">
-        
-        <List></List>
-        
-        <div class="div-detail">
-
-            <div class="">    
-                <div class="row">
-                    <div class="col-sm-7">
-                        <img class="product-image" src="./../assets/img/test-iphone.jpg">
-                    </div>
-
-                    <div class="col-sm-5">
-                            <p class="text-date">Nuevo - 234 vendidos</p>
-                            <p class="text-name">Deco Reverse Sombrero Oxford</p>
-                            <p class="text-price">$ 1.980</p>
-                            
-                            <div class="padding-top">
-                                <buttom class="btn btn-sm btn-ml">Comprar</buttom>
-                            </div>
-                    </div>
-                </div>
-                <div class="detail-description">
-                    <p class="text-title-description">Descripción del producto</p>
-
-                    <div class="padding-top detail-description">
-                        <p class="text-description">asdjklasdjaskldjaskldj klasdjaskldjasdklasjdkl asjdklasjdklasjdklsajdklsa jasj jkl ajlj laj j jaj laj lj lajl asjkl aj jl jaljl al </p>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-
-    </div>
-</template>
-
+<template src="./Detail.html"></template>
 
 <script>
-
-import List from './List'
+import List from "./List";
+import axios from "axios";
+import Global from "./../Global";
 
 export default {
-    name: 'Detail',
-    components: {
-        List
-    }
-}
+  name: "Detail",
+  components: {
+    List,
+  },
+  // Este prop es el que recibo de un componente padre, en este caso de Result.vue.
+  props: ["categories"],
+
+  data() {
+    // Se definen las variables que utilizaré
+    return {
+      id: null,
+      detail: {},
+      description: "",
+    };
+  },
+  // ciclo de vida de Vue, cuando el proyecto acaba de montarse.
+  mounted() {
+    // guardo el ID que recibo por parámetro.
+    this.id = this.$route.params.id;
+    this.getDescription();
+    this.getProduct();
+  },
+  // Métodos
+  methods: {
+    getDescription() {
+      // Petición a items description
+      axios
+        .get(Global.url + Global.items + this.id + this.description)
+        .then((result) => {
+          // Guardo la description
+          this.description = result.data.plain_text;
+        });
+    },
+    getProduct() {
+      // Busco el producto por el id recibido por parámetro
+      axios.get(Global.url + Global.items + this.id).then((result) => {
+        // Guardo el producto recibido
+        this.detail = result.data;
+        // Llamo para obtener las categorías que contiene el producto.
+        // NOTA: Sé que está mal llamarla desde acá, pero no sé por qué no funcionaba llamándola desde el mounted.
+        this.getCategory();
+      });
+    },
+    getCategory() {
+      // Obtengo las categorías
+      axios
+        .get(Global.url + Global.categories + this.detail.category_id)
+        .then((result) => {
+          // Las guardo
+          this.categories = result.data.path_from_root;
+        });
+    },
+  },
+};
 </script>

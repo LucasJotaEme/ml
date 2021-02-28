@@ -8,11 +8,15 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.6.5",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.1",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
+    "request": "^2.88.2",
     "vue": "^2.6.11",
     "vue-router": "^3.5.1"
   },

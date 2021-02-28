@@ -1,8 +1,0 @@
-CSS
-
--Ordenarlos y optimizar.
-
-
-OPCIONALES DE MEJORA:
-
--Centrar bien el SearchBox

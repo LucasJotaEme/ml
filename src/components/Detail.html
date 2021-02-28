@@ -1,0 +1,36 @@
+<div class="template-default">
+
+    <!-- Lista de categorías -->
+    <div v-if="categories">
+        <List :categories="categories"></List>
+    </div>
+
+    <!-- Detalles del producto -->
+    <div class="div-detail">
+        <div class="row">
+            <div class="col-sm-7">
+                <!-- pictures[0] es para obtener la primer imágen sólamente, y mostrarla. -->
+                <img class="product-image" :src="detail.pictures[0].url" />
+            </div>
+
+            <div class="col-sm-5">
+                <p class="text-date" translate="yes">
+                    {{ detail.condition }} - {{ detail.sold_quantity }} vendidos
+                </p>
+                <p class="text-name">{{ detail.title }}</p>
+                <p class="text-price">$ {{ detail.price }}</p>
+
+                <div class="padding-top">
+                    <button class="btn btn-ml">Comprar</button>
+                </div>
+            </div>
+        </div>
+        <div class="detail-description">
+            <p class="text-title-description">Descripción del producto</p>
+
+            <div class="padding-top detail-description">
+                <p class="text-description">{{ description }}</p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="lista">
+    <ul>
+        <!-- Recorro las categorías -->
+        <li :key="index" v-for="(category, index) in categories">
+            <span v-if="index == categories.length - 1">
+                <!-- Si es la última categoría, le doy un estílo diferente -->
+                <span class="lista-selected">
+                    {{category.name}}
+                </span>
+
+            </span>
+            <span v-else>
+                {{category.name}} >
+            </span>
+        </li>
+    </ul>
+</div>

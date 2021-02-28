@@ -1,0 +1,21 @@
+<div class="template-default">
+
+    <!-- Lista te categorías -->
+    <div v-if="categories">
+        <List :categories="categories"></List>
+    </div>
+
+    <!-- Si los resultados es distinto a null, recorro -->
+    <div v-if="results && results.length != 0" class="div-results margin-top">
+        <div :key="index" v-for="(result, index) in results">
+            <!-- Llamo al componente Product y le paso por parámetro los productos -->
+            <Product :product="result"></Product>
+        </div>
+    </div>
+    <!-- Sino, muestro un div que no hay resultados. -->
+    <div v-else>
+        <div class="div-not-results margin-top">
+            <h1>No hay publicaciones que coincidan con tu búsqueda.</h1>
+        </div>
+    </div>
+</div>

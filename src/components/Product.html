@@ -1,0 +1,33 @@
+<div>
+    <div class="media">
+        <!-- Cuando se haga click, llamo al componente detail, pasándole por parámetro su id -->
+        <router-link :to="{ name: 'detail', params: { id: product.id } }">
+            <img class="product-img margin-top margin-left margin-bottom" :src="product.thumbnail" />
+        </router-link>
+1       
+        <!-- Muestro el producto que recibo por parámetro -->
+        <div class="margin-top margin-left container-fluid">
+            <div class="margin-top">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="media">
+                            <p class="product-price">$ {{ product.price }}</p>
+                            <div v-if="product.shipping.free_shipping">
+                                <img class="product-shipping" src="./../assets/img/ic_shipping.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <p class="product-country">{{ product.address.state_name }}</p>
+                    </div>
+                </div>
+
+                <div class="padding-top product-description">
+                    {{ product.title }}
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <hr />
+</div>

@@ -1,5 +1,3 @@
-
-
 body{
     font-family: "Proxima Nova",-apple-system,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif !important;
     background-color: #EEEEEE !important;
@@ -9,30 +7,17 @@ body{
     margin:auto !important;
 }
 
-.detail-description{
-    padding-top: 10px;
-}
-
-.div-results{
-    background-color: white;
-    margin-right: 50px;
-    border-radius: 4px;
-    margin-top: 16px;
-}
-
-.div-detail{
-    background-color: white;
-    margin-right: 50px;
-    border-radius: 4px;
-    margin-top: 16px;
-    padding: 32px;
-}
-
 p{
     margin-block-start: 0em !important;
     margin-block-end: 0em !important;
     /* Para quitar el margen por default de Boots */
 }
+
+hr{
+    margin: 0px 16px 0px 16px !important;
+}
+
+/* Clases de nav */
 
 .nav-search{
     background-color: #FFE600;
@@ -50,96 +35,41 @@ p{
 .nav-search{
     border: none !important;
 }
-
-.lista{
-    color: #999999;
-    font-size: 14px !important;
-}
-
-.lista ul{
-    padding-right: 0px;
-    padding-left: 0px;
-    padding-bottom: 0px;
-    padding-top: 0px;
-    margin: 0px;
-
-}
-
-hr{
-    margin: 0px 16px 0px 16px !important;
-}
-
-.detail{
-    margin: 16px 0px 16px 100px;
-}
+/* Por defecto */
 
 .template-default{
-    margin: 16px 100px 16px 100px;
+    margin: 16px 100px;
 }
 
-.lista li{
-   list-style-type: none;
-   display: inline;
-   padding-right: 5px;
-}
+/* Clases de Results */
 
-.lista-selected{
-    font-weight: bold;
-}
-
-.product-image{
-    width:680px;
-}
-
-.text-date{
-    font-size: 14px;
-    color: #666666;
-}
-
-.text-name{
-    font-size: 24px;
-    color: #333333;
-    font-weight: bold;
-    margin-bottom: 16px;
-}
-
-.text-price{
-    font-size: 46px;
-}
-
-.text-title-description{
-    font-size: 28px;
-}
-
-.text-description{
-    font-size: 16px;
-    color: #999999;
-}
-
-.btn-ml{
-    background-color: #3483FA !important;
-    color: white !important;
-    line-height: 30px !important;
-    padding: 1px 80px!important;
-    
-}
-
-.product-img{
-    width: 180px;
-    height: 180px;
+.div-results{
+    background-color: white;
+    margin-right: 50px;
     border-radius: 4px;
 }
 
-.margin-top{
-    margin-top: 16px !important;
+.div-not-results{
+    background-color: white;
+    margin-right: 50px;
+    border-radius: 4px;
+    margin-top: 30px;
+    padding: 50px;
 }
 
-.margin-bottom{
-    margin-bottom: 16px !important;
+
+/* Detalles del producto */
+
+.div-detail{
+    background-color: white;
+    margin-right: 50px;
+    border-radius: 4px;
+    margin-top: 16px;
+    padding: 32px;
 }
 
-.margin-left{
-    margin-left: 16px !important;
+.detail-description{
+    padding-top: 10px;
 }
 
 .product-price{
@@ -156,12 +86,14 @@ hr{
     color: #999999;
 }
 
-.padding-top{
-    padding-top: 32px !important;
+.product-image{
+    width:680px;
 }
 
-.padding-left{
-    padding-left: 32px !important;
+.product-img{
+    width: 180px;
+    height: 180px;
+    border-radius: 4px;
 }
 
 .product-description{
@@ -174,4 +106,90 @@ hr{
 
 .div-products{
     background-color: white;
+}
+
+/* Lista de categorías */
+
+.lista{
+    color: #999999;
+    font-size: 14px !important;
+}
+
+.lista ul{
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin: 0px;
+
+}
+
+.lista li{
+   list-style-type: none;
+   display: inline;
+   padding-right: 5px;
+}
+
+.lista-selected{
+    font-weight: bold;
+}
+
+.text-date{
+    font-size: 14px;
+    color: #666666;
+}
+
+/* Estilos de fuentes */
+
+.text-name{
+    font-size: 24px;
+    color: #333333;
+    font-weight: bold;
+}
+
+.text-price{
+    font-size: 46px;
+}
+
+.text-title-description{
+    font-size: 28px;
+}
+
+.text-description{
+    font-size: 16px;
+    color: #999999;
+}
+
+/* Botón de MeLi */
+
+.btn-ml{
+    background-color: #3483FA !important;
+    color: white !important;
+    line-height: 50px !important;
+    padding: 1px 80px!important;
+    
+}
+
+/* Márgenes por defecto */
+
+.margin-top{
+    margin-top: 16px !important;
+}
+
+.margin-bottom{
+    margin-bottom: 16px !important;
+}
+
+.margin-left{
+    margin-left: 16px !important;
+}
+
+/* Paddings */
+
+.padding-top{
+    padding-top: 32px !important;
+}
+
+.padding-left{
+    padding-left: 32px !important;
 }
