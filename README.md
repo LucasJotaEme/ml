@@ -1,4 +1,5 @@
 # ml-front
+tener instalado Node y npm
 
 ## Project setup
 ```

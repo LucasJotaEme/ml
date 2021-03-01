@@ -25,15 +25,15 @@ export default {
   mounted() {
     // guardo el ID que recibo por parámetro.
     this.id = this.$route.params.id;
-    this.getDescription();
     this.getProduct();
+    this.getDescription();
   },
   // Métodos
   methods: {
     getDescription() {
       // Petición a items description
       axios
-        .get(Global.url + Global.items + this.id + this.description)
+        .get(Global.url + Global.items + this.id + Global.description)
         .then((result) => {
           // Guardo la description
           this.description = result.data.plain_text;

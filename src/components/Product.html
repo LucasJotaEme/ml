@@ -3,8 +3,7 @@
         <!-- Cuando se haga click, llamo al componente detail, pasándole por parámetro su id -->
         <router-link :to="{ name: 'detail', params: { id: product.id } }">
             <img class="product-img margin-top margin-left margin-bottom" :src="product.thumbnail" />
-        </router-link>
-1       
+        </router-link>  
         <!-- Muestro el producto que recibo por parámetro -->
         <div class="margin-top margin-left container-fluid">
             <div class="margin-top">
